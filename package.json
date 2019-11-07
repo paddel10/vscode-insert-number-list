@@ -1,0 +1,47 @@
+{
+	"name": "insert-number-list",
+	"displayName": "Insert Number List",
+	"description": "The extension is used to insert numbers a the selected positions whereas every position is incremented.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"categories": [
+		"Formatters"
+	],
+	"activationEvents": [
+		"onCommand:extension.insertNumberList"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [{
+            "command": "extension.insertNumberList",
+			"title": "Insert Number List"
+		}]
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"author": {
+		"name": "paddel10"
+	},
+	"homepage": "https://github.com/paddel10/vscode-insert-number-list",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/paddel10/vscode-insert-number-list"
+	},
+	"bugs": {
+		"url": "https://github.com/paddel10/vscode-insert-number-list/issues"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.39.0",
+		"eslint": "^6.6.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"vscode-test": "^1.2.2"
+	}
+}
